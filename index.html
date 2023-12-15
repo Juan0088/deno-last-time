@@ -35,7 +35,7 @@
    
 
     source.addEventListener('update', (event) => {
-        if(ready === f)return
+        if(ready === false)return
         const{city, country, flag} = JSON.parse(event.data)
         const message  =`Ultima visita desde ${city}, ${country}, ${flag}`
         const isLastEmpty = $last.innerHTML === ''
